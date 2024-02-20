@@ -4,7 +4,7 @@ body {
 }
 
 nav {
-    padding: 16px 140px;
+    padding: 16px 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -101,8 +101,6 @@ button {
     display: flex;
     margin-left: 700px;
     margin-top: -290px;
-    
-    
 }
 
 section.hero2 h1 {
@@ -117,4 +115,33 @@ section.hero2 p {
     font-size: 20px;
     color: #303633;
     margin-right: 500px;
+}
+
+/* Media query for mobile phones */
+@media only screen and (max-width: 768px) {
+    .hero2 {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        align-items: center; /* Center items horizontally on small screens */
+    }
+
+    .hero2 img {
+        max-width: 100%; /* Ensure image is responsive */
+        height: auto; /* Ensure aspect ratio is maintained */
+        margin-left: 0; /* Remove left margin on small screens */
+        margin-top: 20px; /* Adjusted margin for responsiveness */
+    }
+
+    section.hero2 h1 {
+        font-size: 30px; /* Adjusted font size for responsiveness */
+        margin-top: 40px; /* Adjusted margin for responsiveness */
+        margin-right: 0; /* Remove right margin on small screens */
+        text-align: center; /* Center text on small screens */
+    }
+
+    section.hero2 p {
+        font-size: 16px; /* Adjusted font size for responsiveness */
+        color: #303633;
+        margin-right: 0; /* Remove right margin on small screens */
+        text-align: center; /* Center text on small screens */
+    }
 }
