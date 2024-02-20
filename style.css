@@ -117,31 +117,35 @@ section.hero2 p {
     margin-right: 500px;
 }
 
-/* Media query for mobile phones */
-@media only screen and (max-width: 768px) {
-    .hero2 {
-        flex-direction: column; /* Stack elements vertically on small screens */
-        align-items: center; /* Center items horizontally on small screens */
+@media (max-width: 768px) {
+    body {
+        padding: 0;
     }
 
-    .hero2 img {
-        max-width: 100%; /* Ensure image is responsive */
-        height: auto; /* Ensure aspect ratio is maintained */
-        margin-left: 0; /* Remove left margin on small screens */
-        margin-top: 20px; /* Adjusted margin for responsiveness */
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    section.hero2 h1 {
-        font-size: 30px; /* Adjusted font size for responsiveness */
-        margin-top: 40px; /* Adjusted margin for responsiveness */
-        margin-right: 0; /* Remove right margin on small screens */
-        text-align: center; /* Center text on small screens */
+    .link {
+        flex-direction: column;
     }
 
-    section.hero2 p {
-        font-size: 16px; /* Adjusted font size for responsiveness */
-        color: #303633;
-        margin-right: 0; /* Remove right margin on small screens */
-        text-align: center; /* Center text on small screens */
+    .link a {
+        margin-bottom: 20px;
+    }
+
+    .hero img, .hero2 img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    section.hero h1, section.hero2 h1 {
+        margin-right: 0;
+    }
+
+    section.hero p, section.hero2 p {
+        margin-right: 0;
     }
 }
