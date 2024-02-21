@@ -106,7 +106,7 @@ section.hero h2 {
 }
 
 section.hero p {
-    font-size: 20px;
+    font-size: 25px;
     color: #303633;
     margin-right: 150px;
     margin-top: -30px;
@@ -129,7 +129,8 @@ section.hero p {
     padding-top: 15px;
     padding-bottom: 15px;
     appearance: auto;
-    font-weight: 700;
+    font-weight: 900;
+    font-size: 11px;
     cursor: pointer;
     margin-top: 25px;
 }
@@ -163,7 +164,7 @@ section.hero2 h2 {
 }
 
 section.hero2 p {
-    font-size: 20px;
+    font-size: 25px;
     color: #303633;
     margin: 2rem 0px;
     max-width: 500px;
