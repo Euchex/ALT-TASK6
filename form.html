@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - Assignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cb528a524e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/Styles.css" type="text/css">
+    <script src="pass.js"></script>
+</head>
+<body>
+    <div class="container">
+<form action="#" method="post">
+ <!-- Your form fields go here -->
+ <label for="username">First Name:</label>
+ <input type="text" id="firstname" name="firstname" required>
+
+ <label for="lastname">Last Name:</label>
+ <input type="text" id="lastname" name="lastname" required>
+
+ <label for="email">Email</label>
+ <input type="email" id="email" name="email" required>
+
+ <label for="gender">Gender</label>
+ <select id="states">
+    <option value="choose">Select</option>
+     <option value="male">Male</option>
+     <option value="female">Female</option>
+ </select>
+ <br/>
+
+ <div class="password-container">
+    <label for="password">Password</label>
+    <input type="password" class="password-input" id="password" placeholder="Password">
+    <div class="eye-icon" id="togglePassword">
+      <!-- WebKit eye icon Unicode character -->
+      <i class="fa-solid fa-eye"></i>
+    </div>
+  </div>
+
+  <div class="password-container">
+    <label for="Confirm Password">Confirm Password</label>
+    <input type="password" class="password-input" id="password" placeholder="Confirm Password">
+    <div class="eye-icon" id="togglePassword">
+      <!-- WebKit eye icon Unicode character -->
+      <i class="fa-solid fa-eye"></i>
+    </div>
+  </div>
+
+ <input type="submit" value="SIGNUP">
+ 
+</form>
+    </div>
+
+</body>
+</html>
